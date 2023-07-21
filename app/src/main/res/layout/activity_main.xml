@@ -20,29 +20,18 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:textColor="#F6F6F6" />
 
-    <ImageView
-        android:id="@+id/imageViewIcon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.392"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewTitulo"
-        tools:srcCompat="@tools:sample/avatars" />
-
     <EditText
         android:id="@+id/textViewEntrada"
         android:layout_width="122dp"
         android:layout_height="53dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="44dp"
         android:hint="Numero"
         android:inputType="number"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.058"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewIcon" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <Spinner
         android:id="@+id/spinnerUno"
@@ -56,13 +45,13 @@
         app:layout_constraintTop_toTopOf="@+id/textViewEntrada"
         app:layout_constraintVertical_bias="0.0" />
 
-    <EditText
-        android:id="@+id/textViewSalida"
+    <TextView
+        android:id="@+id/textInTo"
         android:layout_width="123dp"
         android:layout_height="55dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="36dp"
-        android:text="Valor"
+        android:text="In To :"
         android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewEntrada" />
@@ -73,18 +62,20 @@
         android:layout_height="59dp"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="16dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textViewSalida"
+        app:layout_constraintBottom_toBottomOf="@+id/textInTo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.238"
-        app:layout_constraintStart_toEndOf="@+id/textViewSalida"
-        app:layout_constraintTop_toTopOf="@+id/textViewSalida" />
+        app:layout_constraintStart_toEndOf="@+id/textInTo"
+        app:layout_constraintTop_toTopOf="@+id/textInTo" />
 
     <Button
         android:id="@+id/btnConvert"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="76dp"
+        android:backgroundTint="#0754C6"
         android:text="Convert"
+        android:textColor="#EFECEC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.315"
@@ -98,7 +89,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="76dp"
+        android:backgroundTint="#F30606"
         android:text="Reset"
+        android:textColor="#F6F6F6"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -116,5 +109,16 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="144dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitulo"
+        app:srcCompat="@drawable/baseline_mic_none_24" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
