@@ -12,9 +12,10 @@ class MainActivity : AppCompatActivity() {
     lateinit var binding:ActivityMainBinding
     private val divisas = listOf<String>("USD","CLP","EUR")
     override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
 
-        super.onCreate(savedInstanceState)
+
         setContentView(binding.root)
 
 
